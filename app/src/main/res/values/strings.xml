@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">CheckBoxTest1</string>
+    <string name="meat">meat</string>
+    <string name="cheese">cheese</string>
+    <string name="nomeat">No meat</string>
+    <string name="nocheese">No cheese</string>
+</resources>

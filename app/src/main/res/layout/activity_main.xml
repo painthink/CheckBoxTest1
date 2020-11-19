@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <CheckBox
+        android:id="@+id/checkBox_meat"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="100dp"
+        android:layout_marginLeft="100dp"
+        android:layout_marginTop="56dp"
+        android:onClick="onCheckboxClicked"
+        android:text="@string/meat"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <CheckBox
+        android:id="@+id/checkBox_cheese"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:text="@string/cheese"
+        app:layout_constraintStart_toStartOf="@+id/checkBox_meat"
+        app:layout_constraintTop_toBottomOf="@+id/checkBox_meat"
+        android:onClick="onCheckboxClicked" />
+
+    <TextView
+        android:id="@+id/textView_meat"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="150dp"
+        android:layout_marginLeft="150dp"
+        android:text="@string/nomeat"
+        app:layout_constraintBottom_toBottomOf="@+id/checkBox_meat"
+        app:layout_constraintStart_toStartOf="@+id/checkBox_meat"
+        app:layout_constraintTop_toTopOf="@+id/checkBox_meat" />
+
+    <TextView
+        android:id="@+id/textView_cheese"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="150dp"
+        android:layout_marginLeft="150dp"
+        android:text="@string/nocheese"
+        app:layout_constraintBottom_toBottomOf="@+id/checkBox_cheese"
+        app:layout_constraintStart_toStartOf="@+id/checkBox_cheese"
+        app:layout_constraintTop_toTopOf="@+id/checkBox_cheese" />
+
+    <ListView
+        android:layout_width="wrap_content"
+        android:layout_height="100dp"
+        android:layout_marginTop="300dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+</androidx.constraintlayout.widget.ConstraintLayout>
